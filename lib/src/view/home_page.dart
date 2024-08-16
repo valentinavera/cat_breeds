@@ -113,7 +113,7 @@ class _HomePageState extends State<HomePage> {
                   child: TextField(
                     controller: _searchController,
                     decoration: const InputDecoration(
-                        labelText: 'Buscar por nombre de raza',
+                        labelText: 'Search by breed name',
                         border: OutlineInputBorder(),
                         suffixIcon: Icon(Icons.search)),
                   ),
@@ -179,7 +179,7 @@ class ItemCat extends StatelessWidget {
                   Text(cat.breeds.first.name, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w700)),
                   const Spacer(),
                   Text(
-                    "Más...",
+                    "More...",
                     style: TextStyle(color: scheme.primary, fontSize: 14, fontWeight: FontWeight.w700),
                   )
                 ],
@@ -203,7 +203,7 @@ class ItemCat extends StatelessWidget {
                 children: [
                   Text(cat.breeds.first.origin, style: const TextStyle(fontSize: 16)),
                   const Spacer(),
-                  Text('Inteligencia: ${cat.breeds.first.intelligence}', style: const TextStyle(fontSize: 16))
+                  Text('Intelligence: ${cat.breeds.first.intelligence}', style: const TextStyle(fontSize: 16))
                 ],
               ),
             ],
