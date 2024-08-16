@@ -1,12 +1,10 @@
 import 'package:cat_breeds/src/view/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart' as riverpod;
-
 
 void main() async {
   await dotenv.load(fileName: '.env');
-  runApp(const riverpod.ProviderScope(child: App()));
+  runApp( const App());
 }
 
 class App extends StatelessWidget {
